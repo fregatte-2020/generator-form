@@ -1,0 +1,12 @@
+# Other files and folders
+node_modules/
+manifest/
+package-lock.json
+gulpconfig.json
+
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk

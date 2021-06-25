@@ -1,0 +1,227 @@
+{
+	"main": [{
+		"action": "www.example.com",
+		"class": "main-form",
+		"items": [
+			{
+				"label": "Фамилия",
+				"type": "text",
+				"id": "last_name",
+				"required": true,
+				"item": [
+					{
+						"label": "ранее менялась",
+						"type": "checkbox",
+						"id": "last_name_checkbox",
+						"onclick": "document.getElementById('last_name_previous').classList.toggle('active');"
+					},
+					{
+						"type": "text",
+						"id": "last_name_previous",
+						"required": true
+					}
+				]
+			},
+			{
+				"label": "Имя",
+				"type": "text",
+				"id": "name",
+				"required": true
+			},
+			{
+				"label": "Отчество",
+				"type": "text",
+				"id": "middle_name"
+			},
+			{
+				"label": "Фамилия латиницей",
+				"type": "text",
+				"id": "last_name_latin",
+				"required": true
+			},
+			{
+				"label": "Имя латиницей",
+				"type": "text",
+				"id": "name_latin",
+				"required": true
+			},
+			{
+				"fieldset": true,
+				"legend": "Дата рождения",
+				"class": "row",
+				"id": "birth",
+				"item": [
+					{
+						"type": "number",
+						"id": "day_birth",
+						"min": 1,
+						"max": 31,
+						"required": true
+					},
+					{
+						"type": "number",
+						"id": "month_birth",
+						"min": 1,
+						"max": 12,
+						"required": true
+					},
+					{
+						"type": "number",
+						"year": "date_birth",
+						"min": 1940,
+						"max": 2004,
+						"required": true
+					}
+				]
+			},
+			{
+				"fieldset": true,
+				"legend": "Семейное положение",
+				"class": "row",
+				"item": [{
+					"type": "select",
+					"id": "status",
+					"option": [
+						{
+							"text": "Не женат / не замужем"
+						},
+						{
+							"text": "Женат / замужем"
+						},
+						{
+							"text": "Предпочитаю не отвечать"
+						}
+					]
+				}]
+			},
+			{
+				"fieldset": true,
+				"legend": "Образование",
+				"class": "row",
+				"item": [{
+					"type": "select",
+					"id": "education",
+					"optgroup": [
+						{
+							"label": "Высшее",
+							"option": [
+								{
+									"text": "Незаконченное высшее"
+								},
+								{
+									"text": "Высшее (бакалавр)"
+								},
+								{
+									"text": "Высшее (специалист)"
+								},
+								{
+									"text": "Высшее (магистр)"
+								}
+							]
+						},
+						{
+							"label": "Среднее",
+							"option": [
+								{
+									"text": "Среднее (9 классов)"
+								},
+								{
+									"text": "Среднее (11 классов)"
+								},
+								{
+									"text": "Средне-специальное"
+								}
+							]
+						}
+					]
+				}]
+			},
+			{
+				"fieldset": true,
+				"legend": "Контактная информация",
+				"class": "contacts",
+				"item": [
+					{
+						"label": "Моб. телефон",
+						"type": "tel",
+						"id": "phone",
+						"required": true
+					},
+					{
+						"label": "Электронная почта",
+						"type": "email",
+						"id": "email",
+						"required": true
+					}
+				]
+			},
+			{
+				"fieldset": true,
+				"class": "footer",
+				"item": [
+					{
+						"type": "checkbox",
+						"id": "approval",
+						"label": "Ставя эту галочку, я подтверждаю, что поставил её в трезвом уме и твёрдой памяти",
+						"required": true
+					},
+					{
+						"type": "button",
+						"button": "submit",
+						"class": "footer",
+						"text": "Полететь на Марс"
+					}
+				]
+			}
+		]
+	}],
+
+
+	"contacts": [{
+		"action": "www.example.com",
+		"class": "contacts-form",
+		"items": [
+			{
+				"label": "Имя",
+				"type": "text",
+				"id": "name",
+				"required": true
+			},
+			{
+				"fieldset": true,
+				"legend": "Контактная информация",
+				"item": [
+					{
+						"label": "Моб. телефон",
+						"type": "tel",
+						"id": "phone",
+						"required": true
+					},
+					{
+						"label": "Электронная почта",
+						"type": "email",
+						"id": "email",
+						"required": true
+					}
+				]
+			},
+			{
+				"fieldset": true,
+				"class": "footer",
+				"item": [
+					{
+						"label": "Ставя эту галочку, я подтверждаю, что поставил её в трезвом уме и твёрдой памяти",
+						"type": "checkbox",
+						"id": "approval",
+						"required": true
+					},
+					{
+						"type": "button",
+						"button": "submit",
+						"text": "Полететь на Марс"
+					}
+				]
+			}
+		]
+	}]
+}

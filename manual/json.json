@@ -1,0 +1,106 @@
+﻿{
+  "main": [
+    {
+      "action": "www.example.com",
+      "class": "main-form",
+      "items": [
+        {
+          "label": "Имя",
+          "type": "input",
+          "id": "name",
+          "required": true
+        },
+        {
+          "label": "Фамилия",
+          "type": "text",
+          "id": "last_name",
+          "required": true,
+          "item": [
+            {
+              "type": "text",
+              "id": "last_name_previous"
+            },
+            {
+              "type": "select",
+              "id": "status",
+              "option": [
+                {
+                  "text": "Не женат / не замужем",
+                  "value": "1"
+                },
+                {
+                  "text": "Женат / замужем",
+                  "value": "2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fieldset": true,
+          "legend": "Дата рождения",
+          "class": "row",
+          "id": "birth",
+          "item": [
+            {
+              "type": "number",
+              "id": "day_birth",
+              "min": 1,
+              "max": 31,
+              "required": true
+            },
+            {
+              "type": "number",
+              "id": "month_birth",
+              "min": 1,
+              "max": 12,
+              "required": true
+            },
+            {
+              "type": "number",
+              "year": "date_birth",
+              "min": 1940,
+              "max": 2004,
+              "required": true
+            }
+          ]
+        },
+        {
+          "fieldset": true,
+          "legend": "Образование",
+          "class": "row",
+          "item": [
+            {
+              "type": "select",
+              "id": "education",
+              "optgroup": [
+                {
+                  "label": "Высшее",
+                  "option": [
+                    {
+                      "text": "Незаконченное высшее"
+                    },
+                    {
+                      "text": "Полное высшее"
+                    }
+                  ]
+                },
+                {
+                  "label": "Среднее",
+                  "option": [
+                    {
+                      "text": "Среднее (11 классов)"
+                    },
+                    {
+                      "text": "Средне-специальное"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

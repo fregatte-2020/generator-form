@@ -42,7 +42,8 @@ var $json = '/assets/form.json'.
 **На 3 и последующих уровнях прописываются данные элементов формы.**
 
 Структуру JSON можно представить следующим образом:
-![](http://bchd.hostronavt.ru/generator-form/manual/structure_JSON.jpg)
+![Структура JSON](https://github.com/fregatte-2020/generator-form/blob/master/manual/structure_JSON)
+
 Для данной структуры JSON будет иметь следующий вид:
 ```{
   "main": [
